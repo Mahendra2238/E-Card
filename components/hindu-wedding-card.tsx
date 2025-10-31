@@ -1,3 +1,4 @@
+
 "use client"
 
 import type React from "react"
@@ -389,7 +390,7 @@ export default function HinduWeddingCard({ isOpen, setIsOpen, currentPage, setCu
 
                  <div className="aspect-video flex items-center justify-center relative overflow-hidden">
                    <video
-                     src="/wedding-invitation-vedio.mp4"
+                     src="/public/wedding-invitation-vedio.mp4
                      controls
                      autoPlay
                      className="w-full h-full"

@@ -367,11 +367,15 @@ export default function HinduWeddingCard({ isOpen, setIsOpen, currentPage, setCu
                        Watch our official wedding invitation — a heartfelt video capturing the
                        traditions, love, and joy of our upcoming celebration.
                      </p>
-                   </div>
-           
-                   <div className="text-center text-xs sm:text-sm text-amber-600 p-3 sm:p-4 bg-amber-50 rounded-lg border border-amber-200">
-                     <p className="font-serif">🎬 Watch our wedding invitation video</p>
-                   </div>
+                   </div>          
+                  <div className="flex justify-center">
+                    <button
+                      onClick={() => setShowVideoModal(true)}
+                      className="px-4 py-2 sm:px-6 sm:py-3 bg-amber-600 text-white text-sm sm:text-base rounded-full shadow-md hover:bg-amber-700 transition duration-300 font-serif flex items-center gap-2"
+                    >
+                      <Play className="w-4 h-4 sm:w-5 sm:h-5" /> Watch Our Wedding Invitation Video
+                    </button>
+                  </div>
                  </div>
                </div>
              </div>
@@ -389,17 +393,17 @@ export default function HinduWeddingCard({ isOpen, setIsOpen, currentPage, setCu
                  </button>
 
                  <div className="aspect-video flex items-center justify-center relative overflow-hidden">
-                   <video
-                     src="/public/wedding-invitation-vedio.mp4
-                     controls
-                     autoPlay
-                     className="w-full h-full"
-                     controlsList="nodownload"
-                     preload="metadata"
-                   >
-                     Your browser does not support the video tag.
-                   </video>
-                 </div>
+                  <video
+                    src="/wedding-invitation-video.mp4"
+                    controls
+                    autoPlay
+                    className="w-full h-full"
+                    controlsList="nodownload"
+                    preload="metadata"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                </div>
              </div>
            )}

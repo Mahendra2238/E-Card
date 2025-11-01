@@ -100,13 +100,12 @@ export default function Home() {
       <div className="w-full max-w-4xl space-y-3 sm:space-y-4">
         {/* Primary Controls */}
         <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 justify-center">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="col-span-2 sm:col-span-1 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 text-white font-serif text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            {isOpen ? "Close Card" : "Open Invitation"}
-          </button>
-
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="col-span-2 sm:col-span-1 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 text-white font-serif text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
+        >
+          {isOpen ? "Close Invitation" : "🎉 Click to View Invitation"}
+        </button>
           <button
             onClick={() => setCurrentPage(Math.max(0, currentPage - 1))}
             disabled={currentPage === 0 || !isOpen}

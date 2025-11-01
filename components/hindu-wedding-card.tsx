@@ -393,20 +393,22 @@ export default function HinduWeddingCard({ isOpen, setIsOpen, currentPage, setCu
                  </button>
 
                  <div className="aspect-video flex items-center justify-center relative overflow-hidden">
-                  <video
-                    src="/wedding-invitation-video.mp4"
-                    controls
-                    autoPlay
-                    className="w-full h-full"
-                    controlsList="nodownload"
-                    preload="metadata"
-                  >
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
+                    <video
+                      src="https://cdmy6n7gqcrwetmq.public.blob.vercel-storage.com/wedding-invitation-video.mp4"
+                      controls
+                      autoPlay
+                      playsInline
+                      muted
+                      className="w-full h-full rounded-2xl shadow-lg"
+                      controlsList="nodownload"
+                      preload="metadata"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                </div>
              </div>
-           )}
+          )}
          </div>
        </div>
      </div>
